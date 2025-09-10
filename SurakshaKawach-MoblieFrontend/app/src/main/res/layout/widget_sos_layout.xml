@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slider_container"
+    android:layout_width="130dp"
+    android:layout_height="70dp"
+    >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Default State (Knob on Left, White Background) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:background="@drawable/widget_background"
+            >
+
+            <ImageView
+                android:id="@+id/slider_knob"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="4dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:background="@drawable/round_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Slide Button"
+
+                />
+        </RelativeLayout>
+
+        <!-- SOS Active State (Knob on Right, Green Background) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="8dp"
+            android:background="@drawable/widget_background_green"> <!-- Your green color -->
+
+            <ImageView
+                android:id="@+id/slider_knob_active"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="4dp"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/round_button"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="Slide Button" />
+        </RelativeLayout>
+
+    </ViewFlipper>
+</RelativeLayout>
+

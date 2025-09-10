@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nextlevelprogrammers.surakshakawach",
+      "sha256_cert_fingerprints": [
+        "7A:BA:9F:CF:4A:62:41:92:F5:F0:26:56:DC:EC:4E:8D:45:EA:C7:37:70:05:E2:7A:4D:4F:76:61:DB:E7:68:4E"
+      ]
+    }
+  }
+]

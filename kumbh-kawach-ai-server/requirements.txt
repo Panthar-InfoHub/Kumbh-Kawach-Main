@@ -1,0 +1,9 @@
+fastapi
+pymongo
+google-cloud-storage
+google-auth
+torch
+torchvision
+facenet-pytorch
+pillow>=11.0
+uvicorn[standard]

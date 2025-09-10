@@ -1,0 +1,22 @@
+runtime: nodejs20
+
+service: default
+
+# Set resources and scaling
+instance_class: F2  # Use a higher class for more memory (F1 is the default; try F2 or F4 for larger apps)
+
+# Handlers to serve all files
+handlers:
+  - url: /.*
+    script: auto
+
+# Autoscaling configuration
+automatic_scaling:
+  target_cpu_utilization: 0.95
+  target_throughput_utilization: 0.95
+  min_instances: 0
+  max_instances: 10  # Adjust based on your expected traffic
+
+# Environment variables
+env_variables:
+  NODE_ENV: development  # TODO: Change to production after testing
